@@ -1,0 +1,331 @@
+{
+  "picture": {
+    "hidden": false,
+    "url": "https://rxresu.me/uploads/019cd23e-f1be-776b-914f-0b581351a239/pictures/1773054036398.webp",
+    "size": 60,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0.5)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Halit Egemen Keskin",
+    "headline": "Full-Stack Software Engineer (Java/React)",
+    "email": "keskinegemen0@gmail.com",
+    "phone": "(+90) 5340810761",
+    "location": "Turkey",
+    "website": {
+      "url": "",
+      "label": "Portfolio"
+    },
+    "customFields": [
+      {
+        "id": "019cd245-8d78-719a-9a6d-6f724d54d4ec",
+        "icon": "linkedin-logo",
+        "text": "www.linkedin.com/in/egemen-keskin-developer-marketer/",
+        "link": "www.linkedin.com/in/egemen-keskin-developer-marketer/"
+      },
+      {
+        "id": "019cd249-ca13-744c-8a12-36da8ae334de",
+        "icon": "github-logo",
+        "text": "https://github.com/Egemen-dev0",
+        "link": " https://github.com/Egemen-dev0"
+      }
+    ]
+  },
+  "summary": {
+    "title": "",
+    "columns": 1,
+    "hidden": false,
+    "content": "<p>Versatile Full-Stack Software Engineer (Java/React)&nbsp;with a strong background in automated testing, CI/CD integration, and cloud deployments.&nbsp;Combines full-stack development expertise with digital marketing experience&nbsp;to build scalable e-commerce platforms and automated data-driven tools.</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "experience": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019cd24b-30d7-7263-bbe0-6617ab914b8b",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "company": "Freelance / Self-Employed",
+          "position": "Software Developer",
+          "location": "Turkey",
+          "period": "01/2023 – Present",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p>Cross-Platform Digital Marketing Tool | 01/2023 – Present</p><ul><li><p>Developing a robust full-stack application utilizing React Native, a Java backend, and a PostgreSQL database.</p></li><li><p>Automating advertising workflows by integrating with Google Ads, Meta, TikTok, and Snapchat APIs.</p></li><li><p>Implementing Test-Driven Development (TDD) principles alongside automated UI and API testing, seamlessly integrated into CI/CD workflows.</p></li></ul><p><a target=\"_blank\" rel=\"noopener nofollow\" href=\"https://www.ahsaphome.com/\">Ahsap Home (E-commerce Platform)</a> | 02/2024 – 02/2026</p><ul><li><p>Developed and launched a secure e-commerce platform using React for the frontend and Java with Spring Boot for the backend.</p></li><li><p>Integrated the Iyzico 3D Secure Payment system to ensure safe and reliable transaction processing.</p></li><li><p>Optimized application performance and reduced data retrieval times by implementing Redis caching strategies.</p></li><li><p>Automated backend and API testing using JUnit and RestAssured, integrating these suites into CI/CD pipelines to ensure code quality.</p></li><li><p>Managed infrastructure by deploying via Docker on AWS EC2, later migrating to a VDS, while enhancing availability and security with Nginx and Cloudflare.</p></li></ul><p><a target=\"_blank\" rel=\"noopener nofollow\" href=\"https://mayavox.com/\">Mayavox</a> &amp; <a target=\"_blank\" rel=\"noopener nofollow\" href=\"https://www.mayapex.com/\">Mayapex</a> (Voice Over / Digital Media Agency Platforms) | 04/2023 – 04/2025</p><ul><li><p>Designed and implemented full-stack applications utilizing React and Java with Spring Boot to deliver a seamless user experience.</p></li><li><p>Developed secure authentication and built an intuitive platform allowing clients to browse voice samples and submit offers.</p></li><li><p>Integrated JMS asynchronous messaging to facilitate instant email notifications for administrators upon offer submissions.</p></li><li><p>Ensured system reliability by writing automated testing processes using JUnit, Selenium WebDriver, and RestAssured.<br></p></li></ul><p><a target=\"_blank\" rel=\"noopener nofollow\" href=\"https://www.influencerhomie.com/\">Influencer Homie</a></p><ul><li><p>Built a data-driven web application integrated with the Amazon Product API to automate coupon retrieval.</p></li><li><p>Implemented a Selenium WebDriver-based scraper to extract JavaScript-rendered coupons from affiliate portals and route structured data to the Java backend.</p></li><li><p>Persisted data efficiently in PostgreSQL using Hibernate with clean DTO-entity mapping architecture.</p></li></ul><p></p>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019cd260-14f5-7274-b50e-5217addde563",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "school": "Boğaziçi University",
+          "degree": "Bachelor of Arts",
+          "area": "Translation & Interpreting Studies",
+          "grade": "3.00",
+          "location": "Istanbul, Türkiye",
+          "period": "09/2015 – 07/2021",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "skills": {
+      "title": "",
+      "columns": 3,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019cd261-8721-771c-8c1f-9bda679fb86c",
+          "hidden": false,
+          "icon": "code-simple",
+          "name": "Programming Languages",
+          "proficiency": "Advanced",
+          "level": 0,
+          "keywords": [
+            "Java",
+            "JavaScript",
+            "HTML/CSS"
+          ]
+        },
+        {
+          "id": "019cd263-a73e-7795-999d-46333cc56f84",
+          "hidden": false,
+          "icon": "frame-corners",
+          "name": "Frameworks & Libraries",
+          "proficiency": "Advanced",
+          "level": 0,
+          "keywords": [
+            "Spring Boot",
+            "React",
+            "React Native",
+            "Hibernate"
+          ]
+        },
+        {
+          "id": "019cd264-79ee-777e-b00b-a211025f74af",
+          "hidden": false,
+          "icon": "cloud-check",
+          "name": "DevOps & Cloud",
+          "proficiency": "Advanced",
+          "level": 0,
+          "keywords": [
+            "Docker",
+            "AWS",
+            "Nginx",
+            "Redis",
+            "Cloudflare",
+            "Serverless"
+          ]
+        },
+        {
+          "id": "019cd265-dc86-7100-963b-972b036e86f7",
+          "hidden": false,
+          "icon": "database",
+          "name": "Databases",
+          "proficiency": "Advanced",
+          "level": 0,
+          "keywords": [
+            "PostgreSQL",
+            "MongoDB",
+            "MySQL"
+          ]
+        },
+        {
+          "id": "019cd266-babc-71eb-8926-01b9a7754368",
+          "hidden": false,
+          "icon": "arrows-clockwise",
+          "name": "CI/CD & Testing",
+          "proficiency": "Advanced",
+          "level": 0,
+          "keywords": [
+            "Jenkins",
+            "GitHub Actions",
+            "JUnit",
+            "Selenium WebDriver",
+            "RestAssured",
+            "TDD",
+            "BDD"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "",
+      "columns": 2,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019cd268-0fda-729f-ab98-a2674b24904c",
+          "hidden": false,
+          "language": "English",
+          "fluency": "C2",
+          "level": 0
+        },
+        {
+          "id": "019cd268-4e1d-76f6-9c77-e0b96ead2e36",
+          "hidden": false,
+          "language": "Turkish",
+          "fluency": "Native",
+          "level": 0
+        },
+        {
+          "id": "019cd268-7b13-7714-97d1-fe910890bbbf",
+          "hidden": false,
+          "language": "Russian",
+          "fluency": "B2",
+          "level": 0
+        },
+        {
+          "id": "019cd268-976d-7047-ba26-f851af36ad28",
+          "hidden": false,
+          "language": "French",
+          "fluency": "B2",
+          "level": 0
+        }
+      ]
+    },
+    "interests": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "awards": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "publications": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "references": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "onyx",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": false,
+          "main": [
+            "profiles",
+            "summary",
+            "education",
+            "experience",
+            "projects",
+            "volunteer",
+            "references",
+            "skills",
+            "certifications",
+            "awards",
+            "languages",
+            "interests",
+            "publications"
+          ],
+          "sidebar": []
+        }
+      ]
+    },
+    "css": {
+      "enabled": false,
+      "value": ""
+    },
+    "page": {
+      "gapX": 0,
+      "gapY": 0,
+      "marginX": 16,
+      "marginY": 0,
+      "format": "a4",
+      "locale": "en-US",
+      "hideIcons": false
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(220, 38, 38, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "400",
+          "500"
+        ],
+        "fontSize": 10,
+        "lineHeight": 1.5
+      },
+      "heading": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 14,
+        "lineHeight": 1.5
+      }
+    },
+    "notes": ""
+  }
+}

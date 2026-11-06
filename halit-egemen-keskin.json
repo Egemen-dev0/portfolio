@@ -13,10 +13,10 @@
   },
   "basics": {
     "name": "Halit Egemen Keskin",
-    "headline": "Full-Stack Software Engineer (Java/React)",
+    "headline": "Java Backend Developer · Spring Boot, Microservices, PostgreSQL · ERP & E-Invoicing Integrations",
     "email": "keskinegemen0@gmail.com",
     "phone": "(+90) 5340810761",
-    "location": "Turkey",
+    "location": "Türkiye · open to Istanbul, remote & relocation to Germany",
     "website": {
       "url": "",
       "label": "Portfolio"
@@ -25,14 +25,14 @@
       {
         "id": "019cd245-8d78-719a-9a6d-6f724d54d4ec",
         "icon": "linkedin-logo",
-        "text": "www.linkedin.com/in/egemen-keskin-developer-marketer/",
-        "link": "www.linkedin.com/in/egemen-keskin-developer-marketer/"
+        "text": "www.linkedin.com/in/egemen-keskin-developer",
+        "link": "www.linkedin.com/in/egemen-keskin-developer"
       },
       {
         "id": "019cd249-ca13-744c-8a12-36da8ae334de",
         "icon": "github-logo",
         "text": "https://github.com/Egemen-dev0",
-        "link": " https://github.com/Egemen-dev0"
+        "link": "https://github.com/Egemen-dev0"
       }
     ]
   },
@@ -40,7 +40,7 @@
     "title": "",
     "columns": 1,
     "hidden": false,
-    "content": "<p>Versatile Full-Stack Software Engineer (Java/React)&nbsp;with a strong background in automated testing, CI/CD integration, and cloud deployments.&nbsp;Combines full-stack development expertise with digital marketing experience&nbsp;to build scalable e-commerce platforms and automated data-driven tools.</p>"
+    "content": "<p>Java backend developer. I build and run production systems end to end: REST APIs, databases, integrations, deployment and monitoring.</p><p>Most recently I owned the in-house ERP at Tekman Metal, a 20+ module system used daily by 30–35 people. I cut report generation from 3 minutes to seconds, integrated Turkish e-invoicing for 200+ invoices a day, and brought the codebase under Git, automated tests and Grafana monitoring.</p><p>As a freelancer I built an e-commerce backend as two Spring Boot services, with a reusable Iyzico payment service driven by webhooks. In EPAM's Java Developer program I built a microservice platform with Eureka, asynchronous ActiveMQ (JMS) messaging, JWT security, Prometheus metrics and 93 automated tests.</p><p>Before software I spent three years in ad tech (Taboola, Publicis Groupe), so I work from data and keep business goals in view.</p>"
   },
   "sections": {
     "profiles": {
@@ -55,21 +55,68 @@
       "hidden": false,
       "items": [
         {
-          "id": "019cd24b-30d7-7263-bbe0-6617ab914b8b",
+          "id": "272143c6-e82e-4257-b3f6-1f80eda2c679",
           "hidden": false,
           "options": {
             "showLinkInTitle": false
           },
-          "company": "Freelance / Self-Employed",
-          "position": "Software Developer",
-          "location": "Turkey",
-          "period": "01/2023 – Present",
+          "company": "Tekman Metal",
+          "position": "ERP Software Developer",
+          "location": "Amasya, Türkiye",
+          "period": "05/2026 – 10/2026",
           "website": {
             "url": "",
             "label": ""
           },
-          "description": "<p>Cross-Platform Digital Marketing Tool | 01/2023 – Present</p><ul><li><p>Developing a robust full-stack application utilizing React Native, a Java backend, and a PostgreSQL database.</p></li><li><p>Automating advertising workflows by integrating with Google Ads, Meta, TikTok, and Snapchat APIs.</p></li><li><p>Implementing Test-Driven Development (TDD) principles alongside automated UI and API testing, seamlessly integrated into CI/CD workflows.</p></li></ul><p><a target=\"_blank\" rel=\"noopener nofollow\" href=\"https://www.ahsaphome.com/\">Ahsap Home (E-commerce Platform)</a> | 02/2024 – 02/2026</p><ul><li><p>Developed and launched a secure e-commerce platform using React for the frontend and Java with Spring Boot for the backend.</p></li><li><p>Integrated the Iyzico 3D Secure Payment system to ensure safe and reliable transaction processing.</p></li><li><p>Optimized application performance and reduced data retrieval times by implementing Redis caching strategies.</p></li><li><p>Automated backend and API testing using JUnit and RestAssured, integrating these suites into CI/CD pipelines to ensure code quality.</p></li><li><p>Managed infrastructure by deploying via Docker on AWS EC2, later migrating to a VDS, while enhancing availability and security with Nginx and Cloudflare.</p></li></ul><p><a target=\"_blank\" rel=\"noopener nofollow\" href=\"https://mayavox.com/\">Mayavox</a> &amp; <a target=\"_blank\" rel=\"noopener nofollow\" href=\"https://www.mayapex.com/\">Mayapex</a> (Voice Over / Digital Media Agency Platforms) | 04/2023 – 04/2025</p><ul><li><p>Designed and implemented full-stack applications utilizing React and Java with Spring Boot to deliver a seamless user experience.</p></li><li><p>Developed secure authentication and built an intuitive platform allowing clients to browse voice samples and submit offers.</p></li><li><p>Integrated JMS asynchronous messaging to facilitate instant email notifications for administrators upon offer submissions.</p></li><li><p>Ensured system reliability by writing automated testing processes using JUnit, Selenium WebDriver, and RestAssured.<br></p></li></ul><p><a target=\"_blank\" rel=\"noopener nofollow\" href=\"https://www.influencerhomie.com/\">Influencer Homie</a></p><ul><li><p>Built a data-driven web application integrated with the Amazon Product API to automate coupon retrieval.</p></li><li><p>Implemented a Selenium WebDriver-based scraper to extract JavaScript-rendered coupons from affiliate portals and route structured data to the Java backend.</p></li><li><p>Persisted data efficiently in PostgreSQL using Hibernate with clean DTO-entity mapping architecture.</p></li></ul><p></p>",
-          "roles": []
+          "description": "<p>Owned the in-house ERP of a metal manufacturer: 20+ modules and ~20,000 pages, used daily by 30–35 people in production, sales and accounting.</p><ul><li><p>Cut report generation from 3 minutes to seconds by redesigning schemas, indexes and views, tuning SQL, and fixing the ColdFusion template cache (trusted cache on, cache raised from 100 to 20,000 pages).</p></li><li><p>Integrated Turkish e-invoicing through Digital Planet (Sovos) over SOAP with UBL-TR and XSLT templates, handling 200+ incoming and outgoing e-invoices a day.</p></li><li><p>Built a production module linking shop-floor records with sales orders and accounting.</p></li><li><p>Put the production code under Git, set up an isolated test environment, and added JUnit and Mockito tests.</p></li><li><p>Set up Grafana monitoring and UUID-referenced error logging, so every user-reported error traces back to its request.</p></li></ul>"
+        },
+        {
+          "id": "12f79522-27e9-42a9-a13b-fef6a5d53e12",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "company": "Self-employed",
+          "position": "Freelance Backend & Full-Stack Developer",
+          "location": "Remote, Türkiye",
+          "period": "01/2023 – 05/2026",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p>Designed, built and deployed backends and web apps for clients, from requirements to production.</p><ul><li><p><strong>Ahşap Home (e-commerce):</strong> backend as two Spring Boot services (Java 25, Spring Boot 4, PostgreSQL), a core service and a reusable Iyzico payment service with 3D Secure and webhooks; 41 REST endpoints serving 150–200 users a month.</p></li><li><p><strong>Ahşap Home:</strong> Spring Security with JWT and Google sign-in, Redis product caching, automated order e-mails, 13 Cucumber BDD scenarios and GitHub Actions CI.</p></li><li><p><strong>Mayavox (B2B platform):</strong> Spring Boot backend and React frontend with authentication, an admin notification panel and a client offer module that handled 50–75 offers.</p></li><li><p><strong>Influencer Homie:</strong> Java scraper (Spring Boot, Selenium, Jsoup) collecting 200+ Amazon affiliate coupons a day, replacing hours of manual work; React frontend with Cypress tests.</p></li><li><p>Docker images deployed to Linux servers through GitHub Actions and GitLab CI, behind Nginx and Cloudflare.</p></li></ul>"
+        },
+        {
+          "id": "687ef3f3-acd9-428e-8f81-260e8f077227",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "company": "EPAM Systems",
+          "position": "Java Developer Trainee",
+          "location": "Remote",
+          "period": "08/2025 – 04/2026",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p>Java Developer training program run in Agile (Scrum) sprints with Jira, pull requests and code reviews.</p><ul><li><p>Built a Spring Boot microservice platform with Eureka, ActiveMQ (JMS) messaging, JWT security and Prometheus metrics: 20 REST endpoints, 93 unit tests and 24 Cucumber scenarios.</p></li><li><p>Built AWS Lambda functions in Java on DynamoDB in a team project with GitLab merge requests.</p></li><li><p>Wrote JUnit and Mockito tests with JaCoCo coverage and Checkstyle checks.</p></li></ul>"
+        },
+        {
+          "id": "c5fdb8ce-c70a-46f3-af2c-6a477fc32dfd",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "company": "Taboola · PlanB Media · Publicis Groupe",
+          "position": "Ad tech & performance marketing",
+          "location": "Istanbul, Türkiye",
+          "period": "07/2021 – 08/2024",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<ul><li><p>Analyzed advertising performance data for Tier-1 clients, and was the technical contact for third-party ad integrations (RTB, Taboola), debugging data delivery and tracking with partner engineering teams.</p></li></ul>"
         }
       ]
     },
@@ -101,8 +148,76 @@
     "projects": {
       "title": "",
       "columns": 1,
-      "hidden": true,
-      "items": []
+      "hidden": false,
+      "items": [
+        {
+          "id": "1cf1f83b-3403-45a8-964b-86a25540ea3d",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "Gym Management Platform",
+          "period": "07/2025 – 10/2025",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "Three Spring Boot 3 services with Eureka discovery. The main service (PostgreSQL) publishes trainer workload events to an ActiveMQ (JMS) queue; the workload service (MongoDB) consumes them asynchronously to build monthly and yearly summaries. JWT security with token blacklist, MDC transaction IDs, Prometheus metrics, 93 unit tests and 24 Cucumber scenarios, Docker Compose.",
+          "keywords": [
+            "Java",
+            "Spring Boot",
+            "Spring Cloud",
+            "ActiveMQ / JMS",
+            "PostgreSQL",
+            "MongoDB",
+            "Docker"
+          ]
+        },
+        {
+          "id": "41281bc8-fc5d-48ea-88b6-7db25a085f48",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "Ahşap Home e-commerce backend",
+          "period": "01/2026 – 02/2026",
+          "website": {
+            "url": "https://github.com/Egemen-dev0/wood-app-backend-public",
+            "label": "GitHub"
+          },
+          "description": "Public version of a production e-commerce backend: a core Spring Boot service and a separate Iyzico payment service (3D Secure, webhooks). 41 REST endpoints, Redis caching, JWT and Google OAuth2, 13 Cucumber BDD scenarios, GitHub Actions CI.",
+          "keywords": [
+            "Java 25",
+            "Spring Boot 4",
+            "PostgreSQL",
+            "Redis",
+            "Iyzico",
+            "Cucumber"
+          ]
+        },
+        {
+          "id": "ddbc3bbd-0d74-4454-89f3-9c0038812c78",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "Incident Management App on SAP BTP",
+          "period": "09/2026 – 10/2026",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "Full-stack app with a Node.js backend on SAP CAP exposing OData V4 and a SAPUI5 / Fiori Elements frontend, deployed to SAP BTP Cloud Foundry. In the same training, deployed containerized apps to SAP BTP Kyma (Kubernetes) with hand-written manifests and a Helm chart.",
+          "keywords": [
+            "Node.js",
+            "SAP CAP",
+            "OData V4",
+            "SAP BTP",
+            "Kubernetes",
+            "Helm"
+          ]
+        }
+      ]
     },
     "skills": {
       "title": "",
@@ -110,76 +225,107 @@
       "hidden": false,
       "items": [
         {
-          "id": "019cd261-8721-771c-8c1f-9bda679fb86c",
+          "id": "81b60271-dcea-48b7-b8a1-57cba961641a",
           "hidden": false,
           "icon": "code-simple",
-          "name": "Programming Languages",
-          "proficiency": "Advanced",
+          "name": "Backend",
+          "proficiency": "",
           "level": 0,
           "keywords": [
-            "Java",
-            "JavaScript",
-            "HTML/CSS"
+            "Java 17/21",
+            "Spring Boot",
+            "Spring Security",
+            "Spring Cloud",
+            "Spring Data JPA",
+            "Hibernate",
+            "Maven",
+            "JWT",
+            "Node.js"
           ]
         },
         {
-          "id": "019cd263-a73e-7795-999d-46333cc56f84",
+          "id": "ffb2ec9e-8394-48b0-8094-ba358553fc5c",
           "hidden": false,
           "icon": "frame-corners",
-          "name": "Frameworks & Libraries",
-          "proficiency": "Advanced",
+          "name": "APIs & Architecture",
+          "proficiency": "",
           "level": 0,
           "keywords": [
-            "Spring Boot",
-            "React",
-            "React Native",
-            "Hibernate"
+            "REST APIs",
+            "Microservices",
+            "Event-Driven Architecture",
+            "Webhooks",
+            "Payment Integration",
+            "SOAP",
+            "OpenAPI"
           ]
         },
         {
-          "id": "019cd264-79ee-777e-b00b-a211025f74af",
-          "hidden": false,
-          "icon": "cloud-check",
-          "name": "DevOps & Cloud",
-          "proficiency": "Advanced",
-          "level": 0,
-          "keywords": [
-            "Docker",
-            "AWS",
-            "Nginx",
-            "Redis",
-            "Cloudflare",
-            "Serverless"
-          ]
-        },
-        {
-          "id": "019cd265-dc86-7100-963b-972b036e86f7",
+          "id": "4862c32e-ea98-4a37-8567-acdba01cf8c7",
           "hidden": false,
           "icon": "database",
-          "name": "Databases",
-          "proficiency": "Advanced",
+          "name": "Data & Messaging",
+          "proficiency": "",
           "level": 0,
           "keywords": [
             "PostgreSQL",
+            "MySQL",
+            "MS SQL",
+            "Oracle PL/SQL",
             "MongoDB",
-            "MySQL"
+            "Redis",
+            "ActiveMQ / JMS"
           ]
         },
         {
-          "id": "019cd266-babc-71eb-8926-01b9a7754368",
+          "id": "3685fb8e-7802-45bd-bd5f-f3e26675f02b",
           "hidden": false,
           "icon": "arrows-clockwise",
-          "name": "CI/CD & Testing",
-          "proficiency": "Advanced",
+          "name": "Testing",
+          "proficiency": "",
           "level": 0,
           "keywords": [
-            "Jenkins",
-            "GitHub Actions",
             "JUnit",
-            "Selenium WebDriver",
-            "RestAssured",
-            "TDD",
-            "BDD"
+            "Mockito",
+            "Cucumber (BDD)",
+            "REST Assured",
+            "Integration Testing"
+          ]
+        },
+        {
+          "id": "b3bdca4e-37a7-4623-bfbf-30c767ca65e5",
+          "hidden": false,
+          "icon": "cloud-check",
+          "name": "DevOps & Cloud",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Docker",
+            "Docker Compose",
+            "GitHub Actions",
+            "GitLab CI",
+            "Linux",
+            "Nginx",
+            "Grafana",
+            "Prometheus",
+            "Kubernetes",
+            "Helm",
+            "AWS Lambda",
+            "SAP BTP"
+          ]
+        },
+        {
+          "id": "7b41f5a2-2150-49de-8ba5-ebcff88e7470",
+          "hidden": false,
+          "icon": "frame-corners",
+          "name": "ERP & Integrations",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "ERP Systems",
+            "E-Invoicing (UBL-TR)",
+            "XSLT",
+            "ColdFusion"
           ]
         }
       ]
@@ -215,6 +361,13 @@
           "hidden": false,
           "language": "French",
           "fluency": "B2",
+          "level": 0
+        },
+        {
+          "id": "1ad40b8c-7666-4646-9150-e2b1daa8df88",
+          "hidden": false,
+          "language": "German",
+          "fluency": "A1",
           "level": 0
         }
       ]

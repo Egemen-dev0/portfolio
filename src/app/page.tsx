@@ -1,27 +1,14 @@
 import Image from 'next/image';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Github, Linkedin, Mail, MapPin, ExternalLink, Star, GitFork } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import resumeData from '../../halit-egemen-keskin.json';
 
-async function getGithubProjects() {
-  try {
-    const res = await fetch('https://api.github.com/users/Egemen-dev0/repos?sort=updated&per_page=6', {
-      next: { revalidate: 86400 }
-    });
-    if (!res.ok) return [];
-    const repos = await res.json();
-    return repos.filter((repo: any) => !repo.fork).slice(0, 6);
-  } catch (e) {
-    return [];
-  }
-}
-
-export default async function Portfolio() {
+export default function Portfolio() {
   const data = resumeData as any;
   const { basics, summary, sections, picture } = data;
-  const projects = await getGithubProjects();
+  const projects = (sections.projects.items || []).filter((p: any) => !p.hidden);
 
   const linkedinUrl = basics.customFields.find((f: any) => f.icon === 'linkedin-logo')?.link || '';
   const githubUrl = basics.customFields.find((f: any) => f.icon === 'github-logo')?.link?.trim() || '';
@@ -113,55 +100,42 @@ export default async function Portfolio() {
 
         {/* PROJECTS SECTION */}
         <section className="space-y-8">
-          <div className="flex items-center justify-between border-l-2 border-zinc-200 dark:border-zinc-800 pl-4">
-            <h3 className="text-sm uppercase tracking-widest text-zinc-500 font-bold">Featured Projects</h3>
-            <span className="text-xs font-mono text-zinc-400">GITHUB REPOS</span>
-          </div>
-          
+          <h3 className="text-sm uppercase tracking-widest text-zinc-500 font-bold border-l-2 border-zinc-200 dark:border-zinc-800 pl-4">Featured Projects</h3>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projects.map((repo: any) => (
-              <Card key={repo.id} className="group border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all duration-300 shadow-sm hover:shadow-md overflow-hidden">
-                <CardHeader className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <Github className="h-5 w-5 text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors" />
-                    {repo.homepage && (
-                      <a href={repo.homepage} target="_blank" rel="noopener noreferrer" className="text-xs font-mono flex items-center gap-1 text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
-                        <ExternalLink className="h-3 w-3" /> LIVE
+            {projects.map((project: any) => (
+              <Card key={project.id} className="group border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all duration-300 shadow-sm hover:shadow-md overflow-hidden">
+                <CardHeader className="space-y-2">
+                  <div className="flex items-center justify-between gap-4">
+                    <span className="text-xs font-mono text-zinc-400">{project.period}</span>
+                    {project.website?.url && (
+                      <a href={project.website.url} target="_blank" rel="noopener noreferrer" className="text-xs font-mono flex items-center gap-1 text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
+                        <Github className="h-3 w-3" /> {(project.website.label || 'CODE').toUpperCase()}
                       </a>
                     )}
                   </div>
-                  <CardTitle className="text-lg">
-                    <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="hover:underline decoration-zinc-300 underline-offset-4">
-                      {repo.name}
-                    </a>
-                  </CardTitle>
-                  <CardDescription className="line-clamp-2 text-zinc-500 dark:text-zinc-400 min-h-[2.5rem]">
-                    {repo.description || "Experimental project and code samples."}
+                  <CardTitle className="text-lg">{project.name}</CardTitle>
+                  <CardDescription className="text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                    {project.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {repo.language && (
-                      <Badge variant="secondary" className="bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-none font-mono text-[10px]">
-                        {repo.language.toUpperCase()}
+                    {(project.keywords || []).map((keyword: string) => (
+                      <Badge key={keyword} variant="secondary" className="bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-none font-mono text-[10px]">
+                        {keyword.toUpperCase()}
                       </Badge>
-                    )}
+                    ))}
                   </div>
                 </CardContent>
-                <CardFooter className="flex justify-between border-t border-zinc-100 dark:border-zinc-800/50 bg-zinc-50/30 dark:bg-zinc-900/30 px-6 py-4">
-                  <div className="flex gap-4 text-xs font-mono text-zinc-400">
-                    <span className="flex items-center gap-1"><Star className="h-3 w-3" /> {repo.stargazers_count}</span>
-                    <span className="flex items-center gap-1"><GitFork className="h-3 w-3" /> {repo.forks_count}</span>
-                  </div>
-                  <span className="text-[10px] font-mono text-zinc-300 dark:text-zinc-700">
-                    UPDATED {new Date(repo.updated_at).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }).toUpperCase()}
-                  </span>
-                </CardFooter>
               </Card>
             ))}
           </div>
-          {projects.length === 0 && (
-             <p className="text-zinc-500 italic text-center py-12">Fetching latest projects from GitHub...</p>
+
+          {githubUrl && (
+            <p className="text-sm text-zinc-500 text-center">
+              More on <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-zinc-900 dark:hover:text-white">GitHub</a>
+            </p>
           )}
         </section>
 
